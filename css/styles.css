@@ -836,6 +836,8 @@ input {
     width: 768px;
   }
 
+  /*-------------------- features -------------------- */
+
   .features-list {
     gap: 72px 24px;
   }
@@ -848,10 +850,14 @@ input {
     text-align: start;
   }
 
+  /*-------------------- team -------------------- */
+
   .team-list {
     flex-direction: row;
     gap: 64px 24px;
   }
+
+  /*-------------------- portfolio -------------------- */
 
   .portfolio-list {
     flex-wrap: wrap;
@@ -875,6 +881,8 @@ input {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  /*-------------------- features -------------------- */
 
   .features {
     padding: 120px 0px;
@@ -918,6 +926,8 @@ input {
     margin-bottom: 8px;
   }
 
+  /*-------------------- team -------------------- */
+
   .team {
     padding: 120px 0;
   }
@@ -926,6 +936,8 @@ input {
     display: flex;
     gap: 24px;
   }
+
+  /*-------------------- portfolio -------------------- */
 
   .portfolio {
     padding: 120px 0;
