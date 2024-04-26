@@ -65,9 +65,12 @@ address {
 }
 
 .container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* width: 1158px; */
+  width: 320px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 
@@ -233,22 +236,26 @@ address {
 /*=================================== FEATURES (section 2) =====================================*/
 
 .features {
-  padding: 120px 0px;
+  padding: 96px 0;
 }
 
 .features-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+
+  gap: 72px;
 }
 
 .features-item {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
 }
+
 .features-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
   color: #2e2f42;
   margin-bottom: 8px;
 }
@@ -271,7 +278,8 @@ address {
 }
 
 .container-icons {
-  display: flex;
+  display: none;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   border: 1px solid #8e8f99;
@@ -289,12 +297,15 @@ address {
 
 .team {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding: 96px 0;
 }
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+  gap: 72px;
 }
 
 .team-item {
@@ -816,8 +827,39 @@ input {
 
 .privacy-link {
   color: #4d5ae5;
-  margin-left: ;
 }
 
 .check-icon {
+}
+
+/*====================================== SCREEN ========================================*/
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .features-list {
+    gap: 24px 72px;
+  }
+
+  .features-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+/*====================================== DESKTOP ========================================*/
+
+@media desktop and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+
+  .features {
+    padding: 120px 0px;
+  }
+
+  .features-list {
+    gap: 24px;
+  }
 }
