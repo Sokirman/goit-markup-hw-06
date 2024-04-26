@@ -869,8 +869,9 @@ input {
   .portfolio-list {
     flex-wrap: wrap;
     flex-direction: row;
-    column-gap: 72px;
-    row-gap: 24px;
+    gap: 72px 24px;
+    /* column-gap: 72px;
+    row-gap: 24px; */
   }
 
   .portfolio-container {
