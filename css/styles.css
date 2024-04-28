@@ -451,29 +451,30 @@ address {
 
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
 }
 
 .footer-container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .footer-container-one {
-  margin-right: 120px;
 }
 
 .footer-studio {
   color: #f4f4fd;
 }
 .footer-logo {
-  display: inline-block;
+  /* display: inline-block; */
   margin-bottom: 16px;
   color: #4d5ae5;
+  display: block;
+  justify-content: center;
 }
 
 .footer-text {
@@ -481,11 +482,10 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  max-width: 264px;
+  max-width: 288px;
 }
 
 .footer-container-two {
-  margin-right: 80px;
 }
 
 .soc-text {
@@ -495,6 +495,7 @@ address {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .soc-list {
@@ -525,11 +526,14 @@ address {
 }
 
 .footer-container-three {
+  width: 288px;
 }
 
 .footer-form {
   display: flex;
-  gap: 24px;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-label {
@@ -565,7 +569,7 @@ address {
 }
 
 .footer-btn-svg {
-  margin-left: 16px;
+  /* margin-left: 16px; */
   fill: #fff;
 }
 
@@ -880,6 +884,12 @@ input {
   }
 }
 
+/*-------------------- portfolio -------------------- */
+
+.footer > .container {
+  width: 584рх;
+}
+
 /*=============================== DESKTOP ========================================*/
 
 @media screen and (min-width: 1158px) {
@@ -887,6 +897,148 @@ input {
     width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  /*-------------------- header -------------------- */
+
+  .header {
+    border-bottom: 1px solid #e7e9fc;
+    width: 1440px;
+    height: 72px;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
+    margin: 0 auto;
+  }
+
+  .header-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    margin-right: 76px;
+  }
+
+  .header-nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+  .header-container {
+    display: flex;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 40px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-item {
+    position: relative;
+  }
+
+  .nav-link {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    display: block;
+    padding: 24px 0;
+  }
+
+  .nav-link.studio {
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+  }
+
+  .address-list {
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+    padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .address-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .studio::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    border-radius: 2px;
+    width: 48px;
+    height: 4px;
+    background-color: #404bbf;
+  }
+
+  /*-------------------- hero -------------------- */
+
+  .hero {
+    background-color: #2e2f42;
+    padding: 188px 0px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
+
+  .hero-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #4d5ae5;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hero-button:hover,
+  .hero-button:focus {
+    background-color: #404bbf;
   }
 
   /*-------------------- features -------------------- */
@@ -960,5 +1112,66 @@ input {
   .portfolio-container {
     width: 360px;
     height: 120px;
+  }
+
+  /*--------------------footer -------------------- */
+
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-container-one {
+    margin-right: 120px;
+  }
+
+  .footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+
+  .footer-text {
+    max-width: 264px;
+  }
+
+  .footer-container-two {
+    margin-right: 80px;
+  }
+
+  .soc-text {
+    margin-bottom: 16px;
+  }
+
+  .soc-list {
+    display: flex;
+    gap: 16px;
+  }
+
+  .footer-form {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-input {
+    padding-left: 16px;
+    width: 264px;
+    height: 40px;
+  }
+
+  .footer-btn-svg {
+    margin-left: 16px;
+  }
+
+  .footer-btn {
+    min-width: 165px;
+    height: 40px;
   }
 }
