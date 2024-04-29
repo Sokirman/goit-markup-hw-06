@@ -239,7 +239,8 @@ address {
 
 .features-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   gap: 72px;
 }
 
@@ -464,17 +465,19 @@ address {
 }
 
 .footer-container-one {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
 }
 
 .footer-studio {
   color: #f4f4fd;
 }
 .footer-logo {
-  /* display: inline-block; */
-  margin-bottom: 16px;
-  color: #4d5ae5;
   display: block;
-  justify-content: center;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #4d5ae5;
 }
 
 .footer-text {
@@ -500,8 +503,11 @@ address {
 
 .soc-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 16px;
 }
+
 .soc-item {
   width: 40px;
   height: 40px;
@@ -557,7 +563,7 @@ address {
   padding-left: 16px;
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   background-color: transparent;
   font-weight: 400;
@@ -569,7 +575,7 @@ address {
 }
 
 .footer-btn-svg {
-  /* margin-left: 16px; */
+  margin-left: 16px;
   fill: #fff;
 }
 
