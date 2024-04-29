@@ -885,25 +885,30 @@ input {
   .portfolio-item {
     width: 356px;
   }
-}
 
-/*-------------------- footer -------------------- */
+  /*-------------------- footer -------------------- */
 
-.footer-container {
-  flex-wrap: wrap;
-  max-width: 584px;
-  gap: 72px 24px;
-}
+  .footer-container {
+    max-width: 584px;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
 
-.footer-container-three {
-  justify-content: center;
-  max-width: 453px;
+  .footer-container-three {
+    justify-content: center;
+    max-width: 453px;
+  }
+
+  .footer-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  /* .footer-container-one .footer-container-two {
+    display: flex;
+    gap: 24px;
+  } */
 }
-/* 
-.footer-form {
-  flex-direction: row;
-  gap: 24px;
-} */
 
 /*=============================== DESKTOP ========================================*/
 
