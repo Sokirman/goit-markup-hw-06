@@ -465,9 +465,6 @@ address {
 }
 
 .footer-container-one {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
 }
 
 .footer-studio {
@@ -890,10 +887,23 @@ input {
   }
 }
 
-/*-------------------- portfolio -------------------- */
+/*-------------------- footer -------------------- */
 
-.footer > .container {
-  width: 584рх;
+.footer-container {
+  flex-wrap: wrap;
+  max-width: 584px;
+  gap: 72px 24px;
+}
+
+.footer-container-three {
+  justify-content: center;
+  max-width: 453px;
+}
+
+.footer-form {
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
 }
 
 /*=============================== DESKTOP ========================================*/
@@ -1131,7 +1141,6 @@ input {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    display: flex;
     align-items: baseline;
   }
 
@@ -1152,32 +1161,11 @@ input {
     margin-right: 80px;
   }
 
-  .soc-text {
-    margin-bottom: 16px;
-  }
-
-  .soc-list {
-    display: flex;
-    gap: 16px;
-  }
-
   .footer-form {
-    display: flex;
     gap: 24px;
   }
 
   .footer-input {
-    padding-left: 16px;
     width: 264px;
-    height: 40px;
-  }
-
-  .footer-btn-svg {
-    margin-left: 16px;
-  }
-
-  .footer-btn {
-    min-width: 165px;
-    height: 40px;
   }
 }
