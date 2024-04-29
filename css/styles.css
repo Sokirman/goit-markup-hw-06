@@ -265,30 +265,8 @@ address {
   color: #434455;
 }
 
-.features-icon-link {
-  width: 100%;
-  height: 100%;
-  background-color: #f4f4fd;
-  display: flex;
-  fill: #f4f4fd;
-  justify-content: center;
-  align-items: center;
-}
-
 .container-icons {
   display: none;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  background-color: #f4f4fd;
-  margin-bottom: 8px;
-}
-
-.features-icon {
 }
 
 /*==================================== TEAM (section 3) ======================================*/
