@@ -898,7 +898,7 @@ input {
 
   .header-container {
     display: flex;
-    /* align-items: center; */
+    align-items: center;
   }
 
   .header-logo {
@@ -934,7 +934,7 @@ input {
     letter-spacing: 0.02em;
     color: #2e2f42;
     display: block;
-    padding: 16px 0;
+    padding: 24px 0;
   }
 
   .nav-link.studio {
@@ -946,9 +946,9 @@ input {
   .address-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    /* gap: 12px;
     margin-left: auto;
-    padding: 16px 0;
+    padding: 16px 0; */
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -1090,8 +1090,7 @@ input {
   /*-------------------- header -------------------- */
 
   .header {
-    width: 1440px;
-    height: 72px;
+    /* width: 1440px; */
   }
 
   .header-logo {
@@ -1105,7 +1104,7 @@ input {
   .address-list {
     gap: 40px;
     margin-left: auto;
-    padding: 24px 0;
+    flex-direction: row;
   }
 
   .address-link {
