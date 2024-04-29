@@ -187,7 +187,7 @@ address {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office1.jpg);
+    url(../images/Bg-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -837,7 +837,7 @@ input {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office1.jpg);
+      url(../images/Bg-screen.jpg);
     padding: 112px 0;
   }
 
@@ -1020,7 +1020,7 @@ input {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office1.jpg);
+      url(../images/Bg-desktop.jpg);
     /* background-repeat: no-repeat;
     background-size: cover;
     background-position: center; */
