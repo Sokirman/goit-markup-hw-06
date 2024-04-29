@@ -1062,8 +1062,8 @@ input {
   }
 
   .footer-form {
+    align-items: baseline;
     flex-direction: row;
-
     gap: 24px;
   }
 
