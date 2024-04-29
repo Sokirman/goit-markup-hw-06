@@ -239,8 +239,8 @@ address {
 
 .features-list {
   display: flex;
-  flex-direction: column;
-  /* flex-wrap: wrap; */
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   gap: 72px;
 }
 
@@ -899,12 +899,11 @@ input {
   justify-content: center;
   max-width: 453px;
 }
-
+/* 
 .footer-form {
   flex-direction: row;
-  align-items: center;
   gap: 24px;
-}
+} */
 
 /*=============================== DESKTOP ========================================*/
 
