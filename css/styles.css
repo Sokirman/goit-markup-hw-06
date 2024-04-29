@@ -1051,7 +1051,7 @@ input {
     width: 584px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     gap: 72px 24px;
     margin: 0 auto;
@@ -1102,9 +1102,9 @@ input {
   }
 
   .address-list {
+    flex-direction: row;
     gap: 40px;
     margin-left: auto;
-    flex-direction: row;
   }
 
   .address-link {
