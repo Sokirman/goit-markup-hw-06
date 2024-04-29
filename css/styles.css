@@ -532,6 +532,16 @@ address {
   width: 288px;
 }
 
+.form-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+  text-align: start;
+}
+
 .footer-form {
   display: flex;
   gap: 16px;
@@ -889,25 +899,22 @@ input {
   /*-------------------- footer -------------------- */
 
   .footer-container {
-    max-width: 584px;
+    width: 584px;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 72px 24px;
   }
 
   .footer-container-three {
-    justify-content: center;
-    max-width: 453px;
+    width: 453px;
   }
 
   .footer-form {
     flex-direction: row;
     gap: 24px;
   }
-
-  /* .footer-container-one .footer-container-two {
-    display: flex;
-    gap: 24px;
-  } */
 }
 
 /*=============================== DESKTOP ========================================*/
