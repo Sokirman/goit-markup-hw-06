@@ -1154,6 +1154,8 @@ input {
     padding-right: 15px;
     margin: 0 auto;
     align-items: baseline;
+    flex-wrap: nowrap;
+    gap: unset;
   }
 
   .footer-container-one {
