@@ -75,14 +75,15 @@ address {
 /*====================================== HEADER ========================================*/
 
 .header {
-  height: 56px;
-  width: 320px;
-  padding: 17.5px 16px;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
   margin: 0 auto;
+}
+
+.header .container {
+  padding: 0;
 }
 
 .header-logo {
@@ -93,6 +94,8 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: block;
+  padding: 16px;
 }
 
 .header-studio {
@@ -111,22 +114,19 @@ address {
   display: none;
 }
 
-.address-item {
-}
-
-.address-link {
+/* .address-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.address-link:hover,
+/* .address-link:hover,
 .address-link:focus {
   color: #404bbf;
-}
+} */
 
 .menu-open-btn {
   border: none;
@@ -134,6 +134,7 @@ address {
   line-height: 0;
   cursor: pointer;
   margin-left: auto;
+  padding: 16px;
 }
 
 .menu-open-btn-svg {
@@ -146,9 +147,10 @@ address {
   width: 100%;
   height: 100%;
   position: fixed;
+  padding-left: 24px;
+  padding-right: 24px;
   top: 0;
   background-color: #fff;
-  padding: 24px 24px 40px 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -168,11 +170,14 @@ address {
   height: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-left: auto;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
 
 .menu-close-btn-svg {
@@ -183,7 +188,7 @@ address {
 }
 
 .mobile-nav-list {
-  /* margin-bottom: 168px; */
+  padding-top: 72px;
 }
 
 .mob-nav-link.studio {
@@ -191,7 +196,7 @@ address {
 }
 
 .mob-nav-item:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .mob-nav-link {
@@ -207,6 +212,18 @@ address {
 
 .mob-address-list {
   margin-bottom: 48px;
+}
+
+.mob-address-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.mob-address-link.mobile {
+  color: #4d5ae5;
 }
 
 .mob-address-item:not(:last-child) {
@@ -226,6 +243,7 @@ address {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  padding-bottom: 40px;
 }
 
 /*==================================== HERO (section 1) ======================================*/
@@ -886,8 +904,91 @@ input {
 
   /*-------------------- header-------------------- */
 
-  .mobile-menu {
+  .menu-open-btn {
     display: none;
+  }
+
+  .header {
+    /* width: 768px;
+    height: 72px; */
+    border-bottom: 1px solid #e7e9fc;
+  }
+
+  .header-container {
+    display: flex;
+    /* align-items: center; */
+  }
+
+  .header-logo {
+    margin-right: 120px;
+  }
+
+  .header-nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+  .nav-item {
+    position: relative;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #404bbf;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 40px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-link {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    display: block;
+    padding: 16px 0;
+  }
+
+  .nav-link.studio {
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: auto;
+    padding: 16px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .address-link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .studio::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    border-radius: 2px;
+    width: 48px;
+    height: 4px;
+    background-color: #404bbf;
   }
 
   /*-------------------- hero -------------------- */
@@ -974,6 +1075,10 @@ input {
     margin: 0 auto;
   }
 
+  .footer-logo {
+    text-align: start;
+  }
+
   .footer-container-three {
     width: 453px;
   }
@@ -1002,12 +1107,7 @@ input {
 
   /*-------------------- header -------------------- */
 
-  .mobile-menu {
-    display: none;
-  }
-
   .header {
-    border-bottom: 1px solid #e7e9fc;
     width: 1440px;
     height: 72px;
   }
@@ -1016,54 +1116,14 @@ input {
     margin-right: 76px;
   }
 
-  .header-nav {
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-  }
-
-  .header-container {
-    display: flex;
-  }
-
-  .nav-list {
-    display: flex;
-    gap: 40px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .nav-item {
-    position: relative;
-  }
-
-  .nav-link:hover,
-  .nav-link:focus {
-    color: #404bbf;
-  }
-
   .nav-link {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    display: block;
     padding: 24px 0;
-  }
-
-  .nav-link.studio {
-    color: #404bbf;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
   }
 
   .address-list {
-    display: flex;
     gap: 40px;
     margin-left: auto;
     padding: 24px 0;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .address-link {
@@ -1075,16 +1135,9 @@ input {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .studio::after {
-    content: "";
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    border-radius: 2px;
-    width: 48px;
-    height: 4px;
-    background-color: #404bbf;
+  .address-link:hover,
+  .address-link:focus {
+    color: #404bbf;
   }
 
   /*-------------------- hero -------------------- */
