@@ -228,8 +228,6 @@ address {
   gap: 40px;
 }
 
-/*-------------------- modal window mobile -------------------- */
-
 /*==================================== HERO (section 1) ======================================*/
 
 .hero {
@@ -794,12 +792,6 @@ input {
   line-height: 1.17;
 }
 
-.modal-checkbox {
-}
-
-.user-privacy {
-}
-
 .modal-button {
   border-radius: 4px;
   padding: 16px 32px;
@@ -850,9 +842,6 @@ input {
   border: none;
 }
 
-.user-privacy {
-}
-
 .checkbox-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -879,9 +868,6 @@ input {
 
 .privacy-link {
   color: #4d5ae5;
-}
-
-.check-icon {
 }
 
 /*============================= SCREEN ========================================*/
