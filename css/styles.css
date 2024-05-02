@@ -322,6 +322,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  font-weight: 500px;
 }
 
 .container-icons {
@@ -376,8 +377,6 @@ address {
 
 .team-container {
   padding: 32px 0;
-  width: 232px;
-  margin: 0 auto;
 }
 
 .team-soc-list {
@@ -512,6 +511,14 @@ address {
   margin-bottom: 16px;
   text-align: center;
   color: #4d5ae5;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .footer-text {
@@ -576,12 +583,12 @@ address {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
-  text-align: start;
+  text-align: center;
 }
 
 .footer-form {
   display: flex;
-  gap: 16px;
+  gap: 1px;
   flex-direction: column;
   align-items: center;
 }
@@ -616,6 +623,7 @@ address {
   color: #ffffff;
   letter-spacing: 0.04em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-bottom: 16px;
 }
 
 .footer-btn-svg {
@@ -1057,6 +1065,10 @@ input {
     text-align: start;
   }
 
+  .soc-text {
+    text-align: left;
+  }
+
   .footer-container-three {
     width: 453px;
   }
@@ -1065,6 +1077,10 @@ input {
     align-items: baseline;
     flex-direction: row;
     gap: 24px;
+  }
+
+  .form-title {
+    text-align: left;
   }
 
   .footer-input {
